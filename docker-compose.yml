@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+  cexy_nature_jupyter:
+    container_name: cexy_nature_jupyter
+    build:
+      context: .
+    image: cexy_nature/cexy_nature_jupyter
+    restart: always
+    user: root
+    working_dir: /home/jovyan
+    environment:
+      CHOWN_HOME: 'yes'
+      JUPYTER_ENABLE_LAB: 1 
+      NB_USER: jovyan
+    ports:
+      - "81:8888"
+    volumes:
+      - ${PWD}/notebooks:/home/jovyan/notebooks
+      - ${PWD}/data:/home/jovyan/data
