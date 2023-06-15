@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - pip:
+    - pandas
+    - matplotlib
+    - numpy
+    - holoviews
+    - geopandas
+    - datashader
+    - bokeh
+    - opencv-contrib-python
+    - opencv-python
+    - folium
+    - mapclassify
