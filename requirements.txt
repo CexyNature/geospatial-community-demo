@@ -27,14 +27,9 @@ selenium
 mapclassify
 spatialpandas
 branca
-cartopy
 geoviews
 rtree
 pygeos
-sphinx
-opencv-contrib-python
-opencv-python
-tilemapbase
 opencv-contrib-python
 opencv-python
 tilemapbase
