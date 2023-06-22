@@ -28,7 +28,18 @@ Note that because Conda can take a significant amount of time resolving conflict
 
 Once all dependencies are installed, you can launch Notebook IDE from the Terminal/Console. Navigate to the repository top level directory, activate the virtual environment (`conda activate geoenv`) and run the command `jupyter lab`. This command would open a webpage in your default browser with the Jupyter Lab IDE.
 
-You can launch any of the notebooks (extension .ipynb) by clicking on their names. 
+You can launch any of the notebooks (extension .ipynb) by clicking on their names.  
+
+### Using Docker:
+
+A docker file and docker compose example are included. If you are using Docker, this can be used to build and run an image using;
+```
+docker compose up
+```
+
+This will start jupyter running on http://localhost:81/.  
+Copy just the token from the terminal into the field `Password or token:` and click `Log in`.  
+
 
 ## Data
 
